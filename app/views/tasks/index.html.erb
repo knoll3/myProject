@@ -10,9 +10,10 @@
 		</div>
 		<div id="goals">
 
-			<% 7.times do %>
+			<% @goals.each do |goal| %>
 				<div class="goal-card">
-					Applications: 7
+					<span id="goal-name"><%= goal.name %></span>
+					<span id="goal-target"><%= goal.target %></span>
 				</div>		
 			<% end %>
 

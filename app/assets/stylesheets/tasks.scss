@@ -78,10 +78,21 @@ body {
 	float: left;
 	margin: 5px;
 	background: white;
-	width: 150px;
 	padding: 3px;
 	border-radius: 15px;
-	background: #3cea3f;
+	background: #0d770f;
+	color: white;
+}
+
+#goal-name {
+	float: left;
+	padding-left: 10px;
+}
+
+#goal-target {
+	float: left;
+	font-weight: bold;
+	padding: 0 5px 0 5px;
 }
 
 #new-goal {

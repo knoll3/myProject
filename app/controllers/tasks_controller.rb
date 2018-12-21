@@ -2,6 +2,7 @@ class TasksController < ApplicationController
 
 	def index
 		@tasks = Task.all
+		@goals = Goal.all
 	end
 
 	def new
