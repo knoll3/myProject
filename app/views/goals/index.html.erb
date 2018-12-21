@@ -1,1 +1,30 @@
-<h1>Goals</h1>
+<div class="header">
+	<div class="logo">workSMART</div>
+</div>
+
+<div class="main">
+
+	<div id="to-do-box">
+		<div id="to-do-header">
+			<h3>To do</h3>
+		</div>
+
+		<div id="to-do-tasks">
+
+			<% 39.times do %>
+
+				<div class="card">
+					<h5>Task Name</h5>
+					<p>Input some details here.</p>
+				</div>
+			<% end %>
+
+		</div>
+
+		<div id="new-task">
+			<%= link_to '+ New task', '#' %>
+		</div>
+	</div>
+
+
+</div>
