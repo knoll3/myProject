@@ -11,11 +11,11 @@
 
 		<div id="to-do-tasks">
 
-			<% 39.times do %>
+			<% @tasks.each do |task| %>
 
 				<div class="card">
-					<h5>Task Name</h5>
-					<p>Input some details here.</p>
+					<h5><%= task.name %></h5>
+					<p><%= task.description %></p>
 				</div>
 			<% end %>
 
