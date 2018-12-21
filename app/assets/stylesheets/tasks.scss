@@ -13,7 +13,7 @@ body {
 }
 
 .main {
-	padding: 50px 10px 75px 10px;
+	padding: 10px 10px 75px 10px;
 	background: #5193ff;
 }
 
@@ -34,16 +34,17 @@ body {
 	padding-bottom: 25px;
 }
 
-.card {
+.task-card {
 	float: left;
 	margin: 5px;
 	background: white;
 	width: 150px;
 	height: 150px;
 	padding: 10px 10px 15px 10px;
+	border-radius: 15px;
 }
 
-.card p {
+.task-card p {
 	font-size: 14px;
 }
 
@@ -55,4 +56,39 @@ body {
 	color: #777;
 }
 
+#goal-box {
+	width: 685px;
+	margin-top: 10px;
+	text-align: center;	
+	background: #ededed;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#goals {
+	overflow-y: scroll;
+	height: 100px;
+	padding-bottom: 10px;
+}
+
+.goal-card {
+	font-size: 14px;
+	float: left;
+	margin: 5px;
+	background: white;
+	width: 150px;
+	padding: 3px;
+	border-radius: 15px;
+	background: #3cea3f;
+}
+
+#new-goal {
+	padding: 5px;
+}
+
+#new-goal a {
+	color: #777;
+}
 

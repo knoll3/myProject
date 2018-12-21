@@ -4,16 +4,36 @@
 
 <div class="main">
 
+	<div id="goal-box">
+		<div id="goal-header">
+			<h3>Weekly Targets</h3>
+		</div>
+		<div id="goals">
+
+			<% 7.times do %>
+				<div class="goal-card">
+					Applications: 7
+				</div>		
+			<% end %>
+
+		</div>
+
+		<div id="new-goal">
+			<%= link_to '+ New goal', new_goal_path %>
+		</div>
+
+	</div>
+
 	<div id="to-do-box">
 		<div id="to-do-header">
-			<h3>To do</h3>
+			<h3>Tasks</h3>
 		</div>
 
 		<div id="to-do-tasks">
 
 			<% @tasks.each do |task| %>
 
-				<div class="card">
+				<div class="task-card">
 					<h5><%= task.name %></h5>
 					<p><%= task.description %></p>
 				</div>
