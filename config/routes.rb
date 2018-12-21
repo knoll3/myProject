@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-	root "goals#index"
-	resources :goals, only: [:new, :create]
+	root "tasks#index"
+	resources :goals
 	resources :tasks
 end
