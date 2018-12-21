@@ -17,11 +17,13 @@ RSpec.describe TasksController, type: :controller do
 
   describe "tasks#create action" do
   	it "should successfully create a new task in the database" do 
-  		post :create, params: {task: {name: "Application"}}
+  		post :create, params: {task: {name: "Application", 
+                                    description: "This is the description of the task."}}
   		expect(response).to redirect_to root_path
 
   		task = Task.last
   		expect(task.name).to eq("Application")
+      expect(task.description).to eq("This is the description of the task.")
   	end
   end
 end
