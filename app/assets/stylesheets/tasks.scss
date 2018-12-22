@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-y: hidden;
+	height: 100%;
 }
 
 .header {
@@ -64,7 +65,7 @@ body {
 
 #goals {
 	overflow-y: scroll;
-	height: 8vh;
+	height: 8.5vh;
 	padding-bottom: 10px;
 }
 
