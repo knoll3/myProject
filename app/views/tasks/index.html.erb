@@ -11,12 +11,12 @@
 		<!-- Goals Header -->
 		<div id="goal-header">
 			<h3>Weekly Targets</h3>
-			<div class="icon">X</div>
+			<div class="icon"><%= fa_icon "ellipsis-h" %></div>
 		</div>
 		<br class="clear"></br>
 		<hr style="margin:0">
 		<!-- Goals -->
-		<div id="goals">
+		<div id="goals" class="custom-scroll">
 			<% @goals.each do |goal| %>
 				<div class="goal-card">
 					<span id="goal-name"><%= goal.name %></span>
@@ -36,12 +36,12 @@
 		<!-- Task Header -->
 		<div id="task-header">
 			<h3>Tasks</h3>
-			<div class="icon">X</div>
+			<div class="icon"><%= fa_icon "ellipsis-h" %></div>
 		</div>
 		<br class="clear"></br>
 		<hr style="margin:0">
 		<!-- Tasks -->
-		<div id="tasks">
+		<div id="tasks" class="custom-scroll">
 			<% @tasks.each do |task| %>
 				<div class="task-card">
 					<span id="task-name"><%= task.name %></span><br>
@@ -56,3 +56,4 @@
 		</div>
 	</div>
 </div>
+
