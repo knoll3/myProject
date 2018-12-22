@@ -35,17 +35,22 @@ body {
 }
 
 .task-card {
+	max-width: 300px;
+	font-size: 14px;
 	float: left;
 	margin: 5px;
 	background: white;
-	width: 150px;
-	height: 150px;
-	padding: 10px 10px 15px 10px;
+	padding: 10px 15px 10px 15px;
 	border-radius: 15px;
+	text-align: left;
 }
 
-.task-card p {
-	font-size: 14px;
+#task-name {
+	font-weight: bold;
+}
+
+#task-description {
+	color: #666;
 }
 
 #new-task {
@@ -54,6 +59,15 @@ body {
 
 #new-task a {
 	color: #777;
+}
+
+#goal-header h3 {
+	float: left;
+	margin-bottom: 0;
+}
+
+.icon {
+	float: right;
 }
 
 #goal-box {
