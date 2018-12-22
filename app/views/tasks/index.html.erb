@@ -1,51 +1,59 @@
+<!-- Application Header -->
 <div class="header">
 	<div class="logo">workSMART</div>
 </div>
 
+<!-- Main Page Section -->
 <div class="main">
 
+	<!-- Goal Section -->
 	<div id="goal-box">
+		<!-- Goals Header -->
 		<div id="goal-header">
 			<h3>Weekly Targets</h3>
+			<div class="icon"><%= fa_icon "ellipsis-h" %></div>
 		</div>
-		<div id="goals">
-
+		<br class="clear"></br>
+		<hr style="margin:0">
+		<!-- Goals -->
+		<div id="goals" class="custom-scroll">
 			<% @goals.each do |goal| %>
 				<div class="goal-card">
 					<span id="goal-name"><%= goal.name %></span>
 					<span id="goal-target"><%= goal.target %></span>
 				</div>		
 			<% end %>
-
 		</div>
-
+		<hr style="margin:0">
+		<!-- New Goal Link -->
 		<div id="new-goal">
 			<%= link_to '+ New goal', new_goal_path %>
 		</div>
-
 	</div>
 
-	<div id="to-do-box">
-		<div id="to-do-header">
+	<!-- Task Section -->
+	<div id="task-box">
+		<!-- Task Header -->
+		<div id="task-header">
 			<h3>Tasks</h3>
+			<div class="icon"><%= fa_icon "ellipsis-h" %></div>
 		</div>
-
-		<div id="to-do-tasks">
-
+		<br class="clear"></br>
+		<hr style="margin:0">
+		<!-- Tasks -->
+		<div id="tasks" class="custom-scroll">
 			<% @tasks.each do |task| %>
-
 				<div class="task-card">
-					<h5><%= task.name %></h5>
-					<p><%= task.description %></p>
+					<span id="task-name"><%= task.name %></span><br>
+					<span id="task-description"><%= task.description %></span>
 				</div>
 			<% end %>
-
 		</div>
-
+		<hr style="margin:0">
+		<!-- New Task Link -->
 		<div id="new-task">
 			<%= link_to '+ New task', new_task_path %>
 		</div>
 	</div>
-
-
 </div>
+
