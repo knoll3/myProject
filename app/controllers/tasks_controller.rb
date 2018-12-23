@@ -1,8 +1,7 @@
 class TasksController < ApplicationController
 
 	def index
-		@tasks = Task.all
-		@goals = Goal.all
+		render json: {goals: Goal.all, tasks: Task.all}
 	end
 
 	def new
@@ -10,13 +9,14 @@ class TasksController < ApplicationController
 	end
 
 	def create
-		task = Task.create(task_params)
+		@goal = Goal.find_by_id(params[:goal_id])
+		@goal.tasks.create(task_params)
 		redirect_to root_path
 	end
 
 	private
 
 		def task_params
-			params.require(:task).permit(:name, :description)
+			params.require(:task).permit(:name, :description, :status)
 		end
 end
